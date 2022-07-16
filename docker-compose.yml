@@ -1,0 +1,9 @@
+# docker-compose up --build -d
+
+version: '3'
+services:
+  voragopremium:
+    build:
+      context: ./
+    restart: always
+    command: nodejs main.js
