@@ -108,7 +108,7 @@ module.exports = {
                 return `<@&${role.id}> \`.info ${role.name}\``;
             }).join('\n'));
 
-            embed.addField('Achievements', tiersHm.map(role => {
+            embed.addField('Achievements', achievements.map(role => {
                 return `<@&${role.id}> \`.info ${role.name}\``;
             }).join('\n'));
 
