@@ -83,16 +83,19 @@ module.exports = {
 
             let tiersHm = [];
             let tiersNm = [];
+            let achievements = [];
 
             tierInfo.tiers.forEach(tier => {
                 let role = message.guild.roles.cache.find(role => role.name === tier.name);
 
                 if (role) {
                     const checkType = role.name.toLowerCase();
-                    if (checkType.includes('hm')) {
+                    if (tier.type === "hard_mode") {
                         tiersHm.push(role);
-                    } else {
+                    } else if (tier.type === "normal_mode") {
                         tiersNm.push(role);
+                    } else if (tier.type === "achievement") {
+                        achievements.push(role);
                     }
                 }
             });
@@ -102,6 +105,10 @@ module.exports = {
             }).join('\n'));
 
             embed.addField('Hard Mode', tiersHm.map(role => {
+                return `<@&${role.id}> \`.info ${role.name}\``;
+            }).join('\n'));
+
+            embed.addField('Achievements', tiersHm.map(role => {
                 return `<@&${role.id}> \`.info ${role.name}\``;
             }).join('\n'));
 
