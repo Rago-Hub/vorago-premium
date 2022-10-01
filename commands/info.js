@@ -63,7 +63,7 @@ module.exports = {
             .setDescription(`<@&${role.id}> ${members.length} members`)
             .addField('Requirements', requirements)
             .addField('Application (any of the listed options)', applications)
-            .addField('Vorago Collaboration', 'Rago PvM: https://discord.gg/Q8xpnYp\nRago Hub: https://discord.gg/uqGJbKH\nRockman: https://discord.gg/Xr6mpyT')
+            .addField('Vorago Collaboration', '[Rago PvM](https://discord.gg/Q8xpnYp) / [Rago Hub](https://discord.gg/uqGJbKH) / [Rockman](https://discord.gg/Xr6mpyT)')
             .addField('Related guides on Rago Hub', guides);
 
         message.channel.send(embed=replyEmbed);
