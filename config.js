@@ -22,7 +22,7 @@ let settings = {
     }
   },
   github: {
-    url: "https://api.github.com/repos/schilffarth/rago-guides/contents/",
+    url: "https://api.github.com/repos/Rago-Hub/rago-guides/contents/",
     access_token: process.env.GITHUB_ACCESS_TOKEN,
     files: {
       tiers: "tiers.json",
