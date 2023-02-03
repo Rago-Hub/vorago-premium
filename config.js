@@ -37,7 +37,6 @@ let settings = {
     admins: [
       "300296497277173761",
       "144939325140762625",
-      "150275303636205568",
     ],
   },
   sync: {
@@ -53,12 +52,6 @@ let settings = {
         label: "Rago PvM",
         id: "508332998437896204",
         log: "801838667772592150",
-      },
-      {
-        name: "rockman",
-        label: "rockman",
-        id: "493893847772954644",
-        log: "942579682631639050",
       },
       {
         name: "voragobottesting",
