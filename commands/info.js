@@ -46,6 +46,7 @@ module.exports = {
 
         if (!requestedTier) {
             message.reply('your requested tier is not supported, use `.info` to retrieve a full list');
+            this.list(message);
             return;
         }
 
